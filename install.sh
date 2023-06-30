@@ -195,8 +195,8 @@ read -p "Enter desired listen port (default: 443): " listen_port
 listen_port=${listen_port:-443}
 
 # Ask for server name (sni)
-read -p "Enter server name/SNI (default: telewebion.com): " server_name
-server_name=${server_name:-telewebion.com}
+read -p "Enter server name/SNI (default:cdn.whatsapp.net): " server_name
+server_name=${server_name:-cdn.whatsapp.net}
 
 # Retrieve the server IP address
 server_ip=$(curl -s https://api.ipify.org)
